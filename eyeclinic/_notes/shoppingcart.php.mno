@@ -1,0 +1,15 @@
+<?php /* Download all student projects in www.studentprojectguide.com */ 
+session_start();
+if(!isset($_SESSION["admin_id"]))
+{
+	header("Location: index.php");	
+}
+include("includes/header.php");
+include("includes/conn.php");
+if(isset($_POST['token']) && $_POST['token'] == $_SESSION['token'])
+{
+		if(isset($_POST[add]))
+		{
+			$sql="INSERT INTO branch (branch_name, description) VALUES ('$_POST[bname]','$_POST[description]')";
+			
+			if (!mysqli_query($con,$sql
