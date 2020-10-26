@@ -5,7 +5,7 @@ Front End : PHP
 Back End : MySQL
 
 For more details visit:
-https://www.studentprojectguide.com/php/online-eye-care-system/
+https://www.studentprojects.live/phpscript/online-eye-care-system/
 
 
 Video Demonstration:
